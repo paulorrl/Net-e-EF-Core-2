@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{6ABCE307-88EE-425F-ABFC-8961CA3657B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{68DADF1D-5018-4735-A360-9B35DF20EFC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{A0F8D703-E6AE-4DAE-B15D-D0D6D243DBD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ABCE307-88EE-425F-ABFC-8961CA3657B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABCE307-88EE-425F-ABFC-8961CA3657B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABCE307-88EE-425F-ABFC-8961CA3657B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABCE307-88EE-425F-ABFC-8961CA3657B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68DADF1D-5018-4735-A360-9B35DF20EFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DADF1D-5018-4735-A360-9B35DF20EFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DADF1D-5018-4735-A360-9B35DF20EFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DADF1D-5018-4735-A360-9B35DF20EFC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F8D703-E6AE-4DAE-B15D-D0D6D243DBD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F8D703-E6AE-4DAE-B15D-D0D6D243DBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F8D703-E6AE-4DAE-B15D-D0D6D243DBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F8D703-E6AE-4DAE-B15D-D0D6D243DBD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {943184F4-4308-4E74-BF65-E0CE4F41AAFA}
+	EndGlobalSection
+EndGlobal
