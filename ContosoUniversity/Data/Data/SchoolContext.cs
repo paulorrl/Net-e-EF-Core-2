@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Data.Mapping;
+using Domain.Entities;
 using Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,7 +17,8 @@ namespace Data.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Course>().ToTable("Course");
+            new CourseMap(modelBuilder);
+            // modelBuilder.Entity<Course>().ToTable("Course");
             modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
             var studentMap = modelBuilder.Entity<Student>().ToTable("Student");
 
