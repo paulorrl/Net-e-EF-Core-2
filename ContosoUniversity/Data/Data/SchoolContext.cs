@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
 namespace Data.Data
@@ -17,7 +18,7 @@ namespace Data.Data
         {
             modelBuilder.Entity<Course>().ToTable("Course");
             modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
-            modelBuilder.Entity<Student>().ToTable("Student");
+            modelBuilder.Entity<Student>().ToTable("Student").OwnsOne(x => x.Email);
         }
     }
 }

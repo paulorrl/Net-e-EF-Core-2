@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.ValueObjects;
+using System;
 using System.Collections.Generic;
 
 namespace Domain.Entities
@@ -9,6 +10,7 @@ namespace Domain.Entities
         public string LastName { get; set; }
         public string FirstMidName { get; set; }
         public DateTime EnrollmentDate { get; set; }
+        public Email Email { get; set; }
 
         public ICollection<Enrollment> Enrollments { get; set; }
     }
