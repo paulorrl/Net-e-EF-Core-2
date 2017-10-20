@@ -18,7 +18,14 @@ namespace Data.Data
         {
             modelBuilder.Entity<Course>().ToTable("Course");
             modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
-            modelBuilder.Entity<Student>().ToTable("Student").OwnsOne(x => x.Email);
+            var studentMap = modelBuilder.Entity<Student>().ToTable("Student");
+
+            // Mapeando ValueObjects e mudando nome da propriedade
+            // Caso contrário, o atributo no banco ficaria "Email_Address"
+            studentMap.OwnsOne(x => x.Email).Property(x => x.Address).HasColumnName("Mail");
+
+            // Ignorar propriedade
+            studentMap.OwnsOne(x => x.Email).Ignore(x => x.PropertyIgnore);
         }
     }
 }
